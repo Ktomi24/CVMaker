@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainFrameController">
+   <children>
+      <StackPane fx:id="sp" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <JFXTabPane fx:id="TabPane" prefHeight="0.0" prefWidth="0.0" rotateGraphic="true" side="BOTTOM">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTabPane>
+            <AnchorPane id="AnchorPane" fx:id="main_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <ImageView fitHeight="600.0" fitWidth="800.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../fokepernyo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="CENTER" layoutX="160.0" layoutY="29.0" text="Önéletrajz készítő" textFill="GREY" underline="true">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="203.0" onAction="#guid_clicked" opacity="0.85" prefHeight="120.0" prefWidth="120.0" ripplerFill="#4de862" style="-fx-background-color: #03A9F4; -fx-background-radius: 2000;" text="Tippek" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="566.0" layoutY="299.0" onAction="#exit_clicked" opacity="0.85" prefHeight="48.0" prefWidth="120.0" ripplerFill="#4de862" style="-fx-background-color: #FF6F00; -fx-background-radius: 2000;" text="Kilépés" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="adress_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="242.0" layoutY="20.0" text="Lakóhely információk" textFill="#6b6666" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="street_txt" labelFloat="true" layoutX="20.0" layoutY="89.0" maxWidth="377.0" minWidth="206.0" prefHeight="40.0" prefWidth="520.0" promptText="Város vagy Község neve" />
+                  <JFXTextField fx:id="city_txt" labelFloat="true" layoutX="20.0" layoutY="159.0" maxWidth="377.0" minWidth="206.0" prefHeight="40.0" prefWidth="520.0" promptText="Utca neve" />
+                  <ImageView fitHeight="220.0" fitWidth="350.0" layoutX="480.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../cim.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="other_adress_txt" labelFloat="true" layoutX="20.0" layoutY="219.0" maxWidth="520.0" minWidth="189.0" prefHeight="120.0" prefWidth="377.0" promptText="Egyéb információk a lakóhelyéről" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="education_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="219.0" layoutY="21.0" text="Tanulmányok" textFill="#6b6666" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="227.0" fitWidth="235.0" layoutX="469.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../oktatas.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="education_txt" labelFloat="true" layoutX="21.0" layoutY="143.0" maxWidth="410.0" minWidth="189.0" prefHeight="210.0" prefWidth="410.0" promptText="Írjon ide" />
+                  <Label layoutX="26.0" layoutY="96.0" text="Írjon néhány fontos információt a végzettségeivel kapcsolatban" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="experciance_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="210.0" layoutY="14.0" text="Munkatapasztalat" textFill="#6b6666" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="210.0" fitWidth="197.0" layoutX="486.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../tanul.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="experiance_txt" labelFloat="true" layoutX="18.0" layoutY="139.0" maxWidth="452.0" minWidth="189.0" prefHeight="210.0" prefWidth="450.0" promptText="Írjon ide" />
+                  <Label layoutX="23.0" layoutY="92.0" text="Írjon néhány szót az eddigi munkatapasztalatairól" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="personal_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="229.0" layoutY="14.0" text="Személyes Információk" textFill="#6b6666" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXCheckBox fx:id="check_single" layoutX="237.0" layoutY="114.0" text="Házas ? " />
+                  <JFXTextField fx:id="name_txt" labelFloat="true" layoutX="17.0" layoutY="100.0" maxWidth="377.0" minWidth="206.0" prefHeight="40.0" prefWidth="220.0" promptText="Család és Keresztnév" />
+                  <JFXTextField fx:id="major_txt" labelFloat="true" layoutX="17.0" layoutY="170.0" maxWidth="377.0" minWidth="206.0" prefHeight="40.0" prefWidth="220.0" promptText="Születési Dátum" />
+                  <JFXTextField fx:id="phone_txt" labelFloat="true" layoutX="17.0" layoutY="240.0" maxWidth="377.0" minWidth="206.0" prefHeight="40.0" prefWidth="220.0" promptText="Telefonszám" />
+                  <JFXTextField fx:id="email_txt" labelFloat="true" layoutX="17.0" layoutY="310.0" maxWidth="377.0" minWidth="206.0" prefHeight="40.0" prefWidth="220.0" promptText="Email" />
+                  <ImageView fitHeight="233.0" fitWidth="207.0" layoutX="477.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../szemelyes.png" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="check_driver" layoutX="237.0" layoutY="152.0" text="Rendelkezik jogosítvánnyal ?" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="skills_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="255.0" layoutY="14.0" text="Kézségek" textFill="#6b6666" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="210.0" fitWidth="202.0" layoutX="481.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../kezsegek.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="skills_txt" labelFloat="true" layoutX="18.0" layoutY="144.0" maxWidth="441.0" minWidth="189.0" prefHeight="210.0" prefWidth="441.0" promptText="Írjon ide" />
+                  <Label layoutX="23.0" layoutY="97.0" text="Írjon néhány szót arról, hogy milyen kézségekkel rendelkezik" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="hobbies_anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="119.0" layoutY="14.0" text="Hobbik és nyelvi kézségek" textFill="#6b6666" underline="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="233.0" fitWidth="259.0" layoutX="425.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../hobbik.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea fx:id="hobbies_txt" labelFloat="true" layoutX="20.0" layoutY="268.0" maxWidth="378.0" minWidth="189.0" prefHeight="87.0" prefWidth="378.0" promptText="pl: úszás, foci stb..." />
+                  <Label layoutX="20.0" layoutY="228.0" text="Írja le, hogy miket szeret csinálni szabadidejében" />
+                  <Label layoutX="14.0" layoutY="99.0" text="Írja le, hogy milyen nyelveket beszél" />
+                  <JFXTextArea fx:id="language_txt" labelFloat="true" layoutX="14.0" layoutY="140.0" maxWidth="378.0" minWidth="189.0" prefHeight="74.0" prefWidth="378.0" promptText="Írjon ide " />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="done__anch" minHeight="380.0" minWidth="550.0" prefHeight="380.0" prefWidth="700.0">
+               <children>
+                  <ImageView fitHeight="900.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../kesz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="CENTER" layoutX="246.0" layoutY="14.0" text="Készen van !" textFill="#413afc" underline="true">
+                     <effect>
+                        <Shadow height="2.0" radius="0.5" width="2.0" />
+                     </effect>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="path_txt" editable="false" focusColor="#1a53ff" labelFloat="true" layoutX="14.0" layoutY="324.0" maxWidth="512.0" minWidth="206.0" prefHeight="40.0" prefWidth="338.0" promptText="Mentési pont" />
+                  <JFXButton buttonType="RAISED" layoutX="100.0" layoutY="248.0" onAction="#path_clikced" opacity="0.85" prefHeight="70.0" prefWidth="160.0" ripplerFill="#ed5334" style="-fx-background-color: #0091EA; -fx-background-radius: 2000;" text="Válasszon helyet" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="17.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ez az utolsó lépés kattintson a Válasszon helyet gombra !" wrappingWidth="746.20849609375" />
+                  <Text layoutX="17.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hova szeretné menteni a kész önéletrajzot ?" />
+                  <JFXButton buttonType="RAISED" layoutX="448.0" layoutY="294.0" onAction="#finish_clicked" prefHeight="60.0" prefWidth="244.0" ripplerFill="#3274ee" style="-fx-background-color: #0091EA; -fx-background-radius: 2000;" text="Mentés" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Button fx:id="beolvas" layoutX="462.0" layoutY="218.0" mnemonicParsing="false" onAction="#read" prefHeight="60.0" prefWidth="244.0" style="-fx-background-color: #0091EA; -fx-background-radius: 20;" text="Beolvas" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="462.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="218.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

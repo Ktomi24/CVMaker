@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CV Maker.jnlp"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://javafx.com ">
+  <information>
+    <title>CV Maker</title>
+    <vendor>omzer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/curvesapi-1.04.jar" size="98365" download="eager"/>
+    <jar href="lib/jfoenix-8.0.8.jar" size="2708772" download="eager"/>
+    <jar href="lib/poi-3.16-beta2.jar" size="2619573" download="eager"/>
+    <jar href="lib/poi-ooxml-3.16-beta2.jar" size="1384781" download="eager"/>
+    <jar href="lib/poi-ooxml-schemas-3.16-beta2.jar" size="5873588" download="eager"/>
+    <jar href="lib/poi-scratchpad-3.16-beta2.jar" size="1367466" download="eager"/>
+    <jar href="lib/xmlbeans-2.6.0.jar" size="2730866" download="eager"/>
+  </resources>
+  <applet-desc width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback" name="CV Maker">
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc width="800" height="600" main-class="cv.maker.CVMaker" name="CV Maker"/>
+  <update check="always"/>
+</jnlp>
