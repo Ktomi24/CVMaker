@@ -47,6 +47,8 @@ public class CV_Maker {
     ////////////////////////////////////////////////////////////////////////////
     private XWPFDocument resultDocument = new XWPFDocument();
 
+    /** Cím paragrafus létrehozása   */
+    
     public void createHeaddingParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
         XWPFRun run = headding.createRun();
@@ -60,6 +62,7 @@ public class CV_Maker {
 
     }
 
+    /** Személyes paragrafus létrehozása  */
     public void createPersonalParagraph() {
         XWPFParagraph personal = resultDocument.createParagraph();
         XWPFRun run = personal.createRun();
@@ -87,7 +90,7 @@ public class CV_Maker {
         }
 
     }
-
+/**  Cím paragrafus létrehozása  */
     public void createAdressParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
         XWPFRun run = headding.createRun();
@@ -113,7 +116,9 @@ public class CV_Maker {
         logger.info("Sikeres paragrafus mentés");
 
     }
-
+    
+/** Oktatás paragrafus létrehozása   */
+    
     public void createEducationParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
         XWPFRun run = headding.createRun();
@@ -128,6 +133,8 @@ public class CV_Maker {
         run.addBreak();
 
     }
+    
+    /** Tapasztalat paragrafus létrehozása   */
 
     public void createExperianceParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
@@ -144,6 +151,7 @@ public class CV_Maker {
 
     }
 
+    /** Kézségek paragrafus létrehozása    */
     public void createSkillsParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
         XWPFRun run = headding.createRun();
@@ -155,7 +163,8 @@ public class CV_Maker {
         run.setText(skills + '\n');
 
     }
-
+/**  Nyelv és hobbi paragrafus létrehozása  */
+    
     public void createLanguagesAndHobbiesParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
         XWPFRun run = headding.createRun();
@@ -178,6 +187,8 @@ public class CV_Maker {
 
         }
     }
+    
+    /** Referencia   */
 
     public void createRefrencesParagraph() {
         XWPFParagraph headding = resultDocument.createParagraph();
