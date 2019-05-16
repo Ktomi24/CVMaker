@@ -23,7 +23,7 @@ public class CV_reader extends CV_Maker {
     private String languages;
     private String hobbies;
 
-
+/**   Json file beolvasása */
 
     public void JSON_writer(){
 
